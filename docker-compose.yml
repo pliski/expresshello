@@ -1,0 +1,6 @@
+version: "3"
+services:
+  expresshello:
+    image: pliski/expresshello
+    ports:
+      - 8080:8080
