@@ -2,6 +2,10 @@
   "name": "expresshello",
   "version": "0.0.1",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pliski/expresshello.git"
+  },
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "files": [
@@ -16,7 +20,7 @@
     "clean": "gts clean",
     "compile": "tsc -p .",
     "precompile": "npm run clean",
-    "postcompile": "pwd && cp -r config/ build/src/ && cd build/src && npm i",
+    "postcompile": "cp -r config/ build/src/ && cd build/src && npm i",
     "fix": "gts fix",
     "pretest": "npm run compile",
     "posttest": "npm run check"
