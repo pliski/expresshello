@@ -4,7 +4,7 @@ hello world quickstart typescript express app
 
 ## launch
 
-```docker run -d -p 8080:8080 pliski expresshello```
+```docker run -d -p 8080:8080 pliski/expresshello```
 
 or
 
