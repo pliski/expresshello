@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "=> Building the binary"
+npm run compile
+docker build -t expresshello .
