@@ -1,0 +1,32 @@
+version: "3.1"
+
+services:
+  tor:
+    image: goldy/tor-hidden-service
+    links:
+      - hello
+    environment:
+      BAR_TOR_SERVICE_HOSTS: "80:hello:8080"
+      BAR_TOR_SERVICE_VERSION: "3"
+
+    volumes:
+      - tor-keys:/var/lib/tor/hidden_service/
+
+    secrets:
+      - source: bar
+        target: bar
+        mode: 0400
+
+  hello:
+    image: pliski/expresshello
+    hostname: hello
+    ports:
+      - 80:8080
+
+volumes:
+  tor-keys:
+    driver: local
+
+secrets:
+  bar:
+    file: ./private_key_bar_v3

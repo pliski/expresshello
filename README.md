@@ -6,6 +6,10 @@ hello world quickstart typescript express app
 
 ```docker run -d -p 8080:8080 pliski/expresshello```
 
-or
+## with compose
 
 ```docker-compose up -d```
+
+## as a tor hidden service
+
+```docker-compose -f docker-compose.tor.yml up```
