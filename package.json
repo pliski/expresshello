@@ -1,7 +1,7 @@
 {
   "name": "expresshello",
   "version": "0.0.1",
-  "description": "",
+  "description": "hello world quickstart typescript express app ",
   "repository": {
     "type": "git",
     "url": "git://github.com/pliski/expresshello.git"
