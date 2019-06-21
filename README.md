@@ -1,6 +1,8 @@
 # expresshello
 
-hello world quickstart typescript express app 
+hello world quickstart typescript express app.
+
+see [this wiki page](https://www.posttenebraslab.ch/wiki/projects/dev/tor_hidden_service).
 
 ## launch
 
